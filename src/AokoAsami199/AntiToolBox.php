@@ -28,7 +28,7 @@ class AntiToolBox extends PluginBase implements Listener
 
     public function onLoad(): void
     {
-        $this->getLogger()->info("§aCode by AokoAsami199");
+        $this->getLogger()->info("§aAntiToolBox");
     }
 
     public function onReceive(DataPacketReceiveEvent $aoko): void
