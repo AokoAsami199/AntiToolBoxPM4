@@ -35,7 +35,7 @@ class AntiToolBox extends PluginBase implements Listener
     {
         $atb = $aoko->getPacket();
         if ($atb instanceof LoginPacket) {
-            if ($atb->clientId === 0) {
+            if ($atb->getPacket()->clientId === 0) {
                 $aoko->setCancelled(true);
                 $aoko->getPlayer()->close($this->AntiToolBox);
             }
